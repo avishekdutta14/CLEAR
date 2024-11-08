@@ -31,9 +31,9 @@ qiime tools export \
   --output-path exported-taxonomy
 ```
 
-You will find your **taxonomy.tsv** file inside the exported-taxonomy folder. Once you have the two input files and want to understand which taxonomic groups are contributing to the KEGG orthologs, you will use the following syntax
+You will find your **taxonomy.tsv** file inside the exported-taxonomy folder. Once you have the two input files and want to understand which taxonomic groups are contributing to the KEGG orthologs, you will use the following syntax.
 
 ```
 python asv2pi.py -t path_for_taxonomy_file/taxonomy.tsv -p path_for_asv_contribution_file/pred_metagenome_contrib.tsv -k K00161 K00162
 ```
-You can use as many KEGG orthologs in the script. It will create separate files and report microbes contributing to each KEGG ortholog in a CSV file.
+You can use as many KEGG orthologs in the script. It will create separate files and report microbes contributing to each KEGG ortholog in a CSV file. At present, the script is tailored for KEGG output of PICRUSt. However, the script can be modified for other outputs from PICRUSt2.
