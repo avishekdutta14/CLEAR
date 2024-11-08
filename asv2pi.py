@@ -7,7 +7,7 @@
 
 Example syntax:
 
-python asv_to_picrust.py -t taxonomy.tsv -p pred_metagenome_contrib.tsv -k K02588 K00399
+python asv2pi.py -t taxonomy.tsv -p pred_metagenome_contrib.tsv -k K02588 K00399
 
 """
 
